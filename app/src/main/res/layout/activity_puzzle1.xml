@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".puzzle1">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="5"
+        android:orientation="horizontal"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/plusButton"
+            style="@style/SimpleButtonStyle"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/minusButton"
+            style="@style/SimpleButtonStyle"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/exponentialButton"
+            style="@style/SimpleButtonStyle"
+            android:text="^" />
+
+        <Button
+            android:id="@+id/SubmitButton"
+            style="@style/TextedButtonStyle"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/mulitplicationButton"
+            style="@style/SimpleButtonStyle"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/divisonButton"
+            style="@style/SimpleButtonStyle"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/sqrtButton"
+            style="@style/SimpleButtonStyle"
+            android:text="√" />
+
+        <Button
+            android:id="@+id/ACButton"
+            style="@style/SimpleButtonStyle"
+            android:maxLines="1"
+            android:padding="1dp"
+            android:text="AC" />
+
+        <Button
+            android:id="@+id/CButton"
+            style="@style/SimpleButtonStyle"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/openParenthesisButton"
+            style="@style/SimpleButtonStyle"
+            android:text="(" />
+
+        <Button
+            android:id="@+id/closeParenthesisButton"
+            style="@style/SimpleButtonStyle"
+            android:text=")" />
+
+        <Button
+            android:id="@+id/factorialButton"
+            style="@style/SimpleButtonStyle"
+            android:text="!" />
+
+        <Button
+            android:id="@+id/leftArrowButton"
+            style="@style/ArrowButtonStyle"
+            android:text="←" />
+
+        <Button
+            android:id="@+id/rightArrowButton"
+            style="@style/ArrowButtonStyle"
+            android:text="→"/>
+
+
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/equationET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="333=3"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
